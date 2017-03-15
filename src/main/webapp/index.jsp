@@ -39,7 +39,7 @@
       <%if (user != null && !user.isEmpty()){%>
           <%=GithubQuerier.eventsAsHTML(user)%>
         <% } else { %>
-            Tell me who you are, and I will tell you what you did last ... week? Month? Summer? Not sure yet.
+            Tell me who you are, and I will tell you what you contributed last ... week? Month? Summer? Not sure yet.
         <% }%>
     </div>
   </div>
