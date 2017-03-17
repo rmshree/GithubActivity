@@ -7,7 +7,7 @@
 FROM ubuntu
 
 # File Author / Maintainer
-MAINTAINER Prem Devanbu & Vincent Hellendoorn
+MAINTAINER Arnav Gupta & Mahashree Rajendran
 
 # Install Nginx
 
@@ -34,8 +34,8 @@ ADD nginx.conf /etc/nginx/
 
 ADD init.sh /bin/init.sh
 ADD swap1.sh /bin/swap1.sh
+RUN chmod a+x /bin/swap1.sh
 ADD swap2.sh /bin/swap2.sh
-ADD swap3.sh /bin/swap3.sh
 
 # Append "daemon off;" to the beginning of the configuration
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
@@ -46,3 +46,4 @@ EXPOSE 8888
 # Set the default command to execute
 # when creating a new container
 CMD service nginx start
+

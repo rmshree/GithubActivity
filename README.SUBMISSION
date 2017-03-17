@@ -1,0 +1,14 @@
+Authors: Arnav Gupta and Mahashree Rajendran
+Fork Location: https://github.com/rmshree/GithubActivity
+
+Created Files:
+
+- swap1.sh: used to swap from web2 to web1. Replica of swap2.sh except for the sed command.
+- doswap.sh: used to hotswap between images and sweep up the old containers.
+
+Demonstration:
+
+We will first do "./cleanup.sh" to start with a fresh slate. Then we will run the "./dorun.sh" to initialize the image.
+Next we will move in to the 'nginx-rev' folder and run our swap script, "./doswap.sh", which will perform the swaps and
+cleanup. We assume that the two containers to be swapped will be named web1 and web2. Also, the old implementation (given)
+is named activity and the new implementation is named activity2.

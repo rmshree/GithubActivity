@@ -1,7 +1,7 @@
 version: '2'
 services:
   activity:
-    image: activity2
+    image: activity
 
   ng:
     ports:
